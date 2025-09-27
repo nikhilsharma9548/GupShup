@@ -24,7 +24,7 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
   return selectedUser ? (
     <>
 
-    <div className='h-full  overflow-scroll relative'>
+    <div className='h-[100dvh] overflow-scroll relative'>
       {/* header */}
       <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 px-4 border-b border-slate-700 '>
         
