@@ -8,7 +8,7 @@ import { useState } from 'react'
 const App = () => {
   const [selectedUser, setSelectedUser] = useState(false);
   return (
-    <div className="bg-slate-950 text-white h-screen">
+    <div className="bg-slate-950 text-white h-screen overflow-x-hidden">
       <Routes>
         <Route path='/' element = { <Home/> }/>
         <Route path='/login' element = { <Login/> }/>

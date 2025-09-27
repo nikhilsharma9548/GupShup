@@ -45,7 +45,7 @@ const navigate = useNavigate();
               </div>
               {
                 index > 2 && 
-                <p className='absolute top-4 right-4 text-xs h-5 w-5 flex justify-center items-center rounded-full bg-slate-500'>{index}</p>
+                <p className='absolute top-4 right-4 text-xs h-5 w-5 flex justify-center items-center rounded-full bg-blue-500'>{index}</p>
               }
             </div>
           ))}
