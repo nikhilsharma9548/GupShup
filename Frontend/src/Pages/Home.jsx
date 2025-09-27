@@ -9,7 +9,7 @@ const Home = () => {
   const [openUser, setOpenUser] = useState(false);
 
   return (
-    <div className="w-full h-screen sm:px-[15%] sm:py-[5%] ">
+    <div className="w-full h-[calc(100%-50px)] sm:px-[15%] sm:py-[5%] ">
       <div
         className={`backdrop-blur-xl border-2 border-slate-800 sm:rounded-2xl overflow-hidden grid h-full relative 
         ${selectedUser ? "md:grid-cols-[1fr_2fr]" : "md:grid-cols-[1fr_2fr]"}`}
