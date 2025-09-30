@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import assets from '../assets/assets'
 import {useNavigate} from 'react-router-dom'
+import {Mosaic} from 'react-loading-indicators'
 
 const Profile = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -13,8 +14,10 @@ const Profile = () => {
     navigate('/')
 
   }
+  const [loading, setLoading] = useState(false)
 
-  return (
+  return loading ? (
+    <>
     <div className='min-h-screen flex items-center justify-center'>
       <div className='w-5/6 max-w-2xl text-slate-200
       sm:border-2 border-slate-500 flex items-center justify-center 
@@ -39,8 +42,10 @@ const Profile = () => {
         </form>
         <img className='max-w-44 aspect-square  mx-10 max-sm:mt-10 ' src={assets.logo} alt="" />
       </div>
-    </div>
-  )
+    </div></>
+  ) : <div className='flex justify-center items-center h-screen '>
+    <p className='text-sm'> <Mosaic color="white" size="small"/></p>
+  </div>
 }
 
 export default Profile
