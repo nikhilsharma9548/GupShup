@@ -26,15 +26,14 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
 
     <div className='h-full overflow-scroll relative'>
       {/* header */}
-      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 px-4 border-b border-slate-700 '>
+      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 xs:py-4 px-4 border-b border-slate-700 '>
         
-          <img src={assets.profile_martin} alt="" className='w-8 rounded-full cursor-pointer' onClick={() => setOpenUser(true)}  />
+          <img src={assets.profile_martin} className='w-8 xs:w-10 rounded-full cursor-pointer' onClick={() => setOpenUser(true)}  />
         <p className='flex-1 text-lg text-white flex items-center gap-2'>
           Martin johnson 
           <span className='w-2 h-2 rounded-full bg-green-500'></span>
         </p>
-        <p onClick={() =>setSelectedUser(null)} className='md:hidden'><SlArrowLeft/></p>
-        {/* <img src={assets.help_icon} alt="" className='mr-3 max-md:hidden max-w-5'/> */}
+        <p onClick={() =>setSelectedUser(null)} className='md:hidden xs:text-xl'><SlArrowLeft/></p>
       </div>
 
              {/*------------- Chat Area -----------------  */}
