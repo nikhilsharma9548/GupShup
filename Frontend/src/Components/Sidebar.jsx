@@ -15,7 +15,7 @@ const navigate = useNavigate();
             <p className='text-xl'>GupShup</p>
           </div>
           <div className='py-2' onClick={() => navigate('/profile')}>
-            <img src={assets.avatar_icon} alt="menu" className='max-w-8 cursor-pointer'/>
+            <img src={assets.avatar_icon} alt="menu" className='xs:max-w-10 max-w-9 cursor-pointer'/>
           </div>
         </div>
 
