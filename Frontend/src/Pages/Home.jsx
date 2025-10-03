@@ -13,8 +13,8 @@ const Home = () => {
 
       
       <div
-        className={`backdrop-blur-xl border-2 border-slate-800 sm:rounded-2xl overflow-hidden grid h-full relative
-        ${selectedUser && "md:grid-cols-[1fr_2fr]"}`}
+        className={`backdrop-blur-xl border-2 border-slate-800 sm:rounded-2xl overflow-hidden grid h-full  relative
+        ${selectedUser ? "md:grid-cols-[1fr_2fr]" : "md:grid-cols-[1fr_2fr]"}`}
       >
         <Sidebar selectedUser={selectedUser} setSelectedUser={setSelectedUser} />
         <ChatContainer
