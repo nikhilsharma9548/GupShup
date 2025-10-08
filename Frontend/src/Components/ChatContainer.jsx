@@ -4,7 +4,7 @@ import { formatMessageTime } from '../Lib/utils'
 import { SlArrowLeft } from "react-icons/sl";
 import { IoIosSend } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
-
+import { GoPlus } from "react-icons/go";
 import RightSideBar from './RightSideBar';
 
 
@@ -57,16 +57,15 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
         </div>
         {/* --------------- bottom area --------------------- */}
 
-        <div className='absolute w-full bottom-0 right-0 flex items-center gap-3 sm:px-5 py-1 px-2 sm:bg-slate-100/12'>
+        <div className='absolute w-full bottom-0 right-0 flex items-center sm:px-5 py-1 px-2 sm:bg-slate-100/12'>
+         <input type="file" id='image' accept='image/png, image/jpeg , image/jpg' hidden/>
+            <label htmlFor="image">
+              <p className='text-3xl cursor-pointer text-slate-400'><GoPlus/></p>
+            </label>
           <div className='flex-1  flex items-center  px-3 max-sm:bg-slate-100/12 max-sm:rounded-full'>
             <input type="text" placeholder="send a message"
-             className='flex-1  text-sm xs:text-lg p-3 border-none rounded-lg outline-none text-white placeholder-slate-500'/>
-            <input type="file" id='image' accept='image/png, image/jpeg' hidden/>
-            <label htmlFor="image">
-              <img src={assets.gallery_icon} alt="" className='w-5 mr-2  cursor-pointer'/>
-            </label>
+             className='flex-1 text-sm xs:text-lg p-3 px-1 border-none rounded-lg outline-none text-white placeholder-slate-500'/>   
           </div>
-          {/* <img src={assets.send_button} alt="" className='w-7 cursor-pointer' /> */}
           <p className='text-2xl xs:text-3xl cursor-pointer'><IoIosSend/></p>
         </div>
 
