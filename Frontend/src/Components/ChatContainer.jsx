@@ -26,7 +26,7 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
 
     <div className='h-full overflow-scroll relative'>
       {/* header */}
-      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 xs:py-4 px-4 border-b border-slate-700 '>
+      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 px-7  border-b border-slate-700 '>
         
           <img src={assets.profile_martin} className='w-8 xs:w-10 rounded-full cursor-pointer' onClick={() => setOpenUser(true)}  />
         <p className='flex-1 text-lg text-white flex items-center gap-2'>
@@ -67,7 +67,7 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
             </label>
           </div>
           {/* <img src={assets.send_button} alt="" className='w-7 cursor-pointer' /> */}
-          <p className='text-2xl xs:text-3xl cursor-pointer mr-2'><IoIosSend/></p>
+          <p className='text-2xl xs:text-3xl cursor-pointer'><IoIosSend/></p>
         </div>
 
       </div>

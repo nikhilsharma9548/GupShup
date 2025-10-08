@@ -7,7 +7,7 @@ const Sidebar = ({selectedUser, setSelectedUser}) => {
 const navigate = useNavigate();
 
   return (
-    <div className={`bg-slate-900 h-full p-5 border-r border-slate-600 overfllow-y-scroll text-white ${selectedUser ? 'max-md:hidden' : ''}`}>
+    <div className={`bg-slate-900 h-full p-6 border-r border-slate-600 overfllow-y-scroll text-white ${selectedUser ? 'max-md:hidden' : ''}`}>
       <div className='pb-5'>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-3'>

@@ -14,11 +14,11 @@ const Profile = () => {
     navigate('/')
 
   }
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   return loading ? (
     <>
-    <div className='min-h-screen flex items-center justify-center'>
+    <div className='h-full flex items-center justify-center'>
       <div className='w-5/6 max-w-2xl text-slate-200
       sm:border-2 border-slate-500 flex items-center justify-center 
       max-sm:flex-col-reverse rounded-lg'>
