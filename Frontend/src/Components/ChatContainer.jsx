@@ -76,7 +76,10 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
   ) : (
     <div className='flex flex-col items-center justify-center gap-2 text-gray-500 bg-slate-800/10 max-md:hidden'>
       <img src={assets.logo} alt="" className='max-w-28' />
-      <p className='text-lg flex flex-col text-white'>Mood for GupShup ! <span className='text-center'>Start Now</span></p>
+      <p className='text-lg flex flex-col text-white text-center'>Mood for GupShup ! 
+        <span className='text-center text-5xl mt-2 font-serif font-semibold 
+        bg-gradient-to-r from-[#4bb7ff] to-[#4656ff] bg-clip-text text-transparent'>Start Now</span>
+      </p>
     </div>
   )
 }
