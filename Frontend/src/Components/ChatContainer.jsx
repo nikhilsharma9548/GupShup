@@ -26,7 +26,7 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
 
     <div className='h-full overflow-scroll relative'>
       {/* header */}
-      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 px-7  border-b border-slate-700 '>
+      <div className='flex fixed w-full bg-slate-950 items-center gap-3 py-3 xs:py-4 sm:py-5 px-7  border-b border-slate-700 '>
         
           <img src={assets.profile_martin} className='w-8 xs:w-10 rounded-full cursor-pointer' onClick={() => setOpenUser(true)}  />
         <p className='flex-1 text-lg text-white flex items-center gap-2'>
@@ -37,7 +37,7 @@ const ChatContainer = ({selectedUser, setSelectedUser, setOpenUser }) => {
       </div>
 
              {/*------------- Chat Area -----------------  */}
-      <div className='flex mt-20 flex-col h-[calc(100%-150px)] overflow-y-scroll p-3 pb-6'>
+      <div className='flex mt-20 flex-col h-[calc(100%-150px)] overflow-y-scroll p-5 pb-6 '>
           {messagesDummyData.map((msg, index) => (
             <div key={index} className={`flex w-full items-end gap-2 justify-end ${msg.senderId !== '680f50e4f10f3cd28382ecf9' && 'flex-row-reverse'}`}>
               {msg.image ? (
